@@ -43,8 +43,13 @@ const albums = [
   },
 ];
 
+const getAlbumsFromRedis = async function () {
+  return Promise.resolve(albums);
+};
+
 const getAlbums = async function () {
   return Promise.resolve(albums);
 };
 
 exports.getAlbums = getAlbums;
+exports.getAlbumsFromRedis = getAlbumsFromRedis;
