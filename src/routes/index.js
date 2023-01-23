@@ -6,10 +6,15 @@ const orderController = require("../controllers/AlbumController");
 router.get("/", function (req, res, next) {
   res.json({
     message: "Call the /albums route to retrieve a list of albums",
+    message: "Call the /albumsFromRedis route to retrieve a list of albums from the Redis cache",
+    message: "Call the /orthopedicSurgeries route to retrieve a list of orthopedicSurgeries",
+    message: "Call the /orthopedicSurgeriesFromRedis route to retrieve a list of orthopedicSurgeries from the Redis cache",
   });
 });
 
-// get albums
+router.get("/orthopedicSurgeries", orderController.index);
+router.get("/orthopedicSurgeriesFromRedis", orderController.index);
 router.get("/albums", orderController.index);
+router.get("/albumsFromRedis", orderController.index);
 
 module.exports = router;
