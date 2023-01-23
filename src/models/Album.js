@@ -1,3 +1,107 @@
+
+const orthopedicprocedures = [
+  {
+    id:1,
+    name : "Knee arthroscopy and meniscectomy"
+  },
+  {
+    id:2,
+    name : "Shoulder arthroscopy and decompression"
+  },
+  {
+    id:3,
+    name : "Carpal tunnel release"
+  },
+  {
+    id:4,
+    name : "Knee arthroscopy and chondroplasty"
+  },
+  {
+    id:5,
+    name : "Removal of support implant"
+  },
+  {
+    id:6,
+    name : "Knee arthroscopy and anterior cruciate ligament reconstruction"
+  },
+  {
+    id:7,
+    name : "Knee replacement"
+  },
+  {
+    id:8,
+    name : "Repair of femoral neck fracture"
+  },
+  {
+    id:9,
+    name : "Repair of trochanteric fracture"
+  },
+  {
+    id:10,
+    name : "Debridement of skin/muscle/bone/ fracture"
+  },
+  {
+    id:11,
+    name : "Knee arthroscopy repair of both menisci"
+  },
+  {
+    id:12,
+    name : "Hip replacement"
+  },
+  {
+    id:13,
+    name : "Shoulder arthroscopy/distal clavicle excision"
+  },
+  {
+    id:14,
+    name : "Repair of rotator cuff tendon"
+  },
+  {
+    id:15,
+    name : "Repair fracture of radius (bone)/ulna"
+  },
+  {
+    id:16,
+    name : "Laminectomy"
+  },
+  {
+    id:17,
+    name : "Repair of ankle fracture (bimalleolar type)"
+  },
+  {
+    id:18,
+    name : "Shoulder arthroscopy and debridement"
+  },
+  {
+    id:19,
+    name : "Lumbar spinal fusion"
+  },
+  {
+    id:20,
+    name : "Repair fracture of the distal part of radius"
+  },
+  {
+    id:21,
+    name : "Low back intervertebral disc surgery"
+  },
+  {
+    id:22,
+    name : "Incise finger tendon sheath"
+  },
+  {
+    id:23,
+    name : "Repair of ankle fracture (fibula)"
+  },
+  {
+    id:24,
+    name : "Repair of femoral shaft fracture"
+  },
+  {
+    id:25,
+    name : "Repair of trochanteric fracture"
+  }
+];
+
 const albums = [
   {
     id: 1,
@@ -43,6 +147,14 @@ const albums = [
   },
 ];
 
+const getOrthopedicSurgeriesFromRedis = async function () {
+  return Promise.resolve(albums);
+};
+
+const getOrthopedicSurgeries = async function () {
+  return Promise.resolve(albums);
+};
+
 const getAlbumsFromRedis = async function () {
   return Promise.resolve(albums);
 };
@@ -50,6 +162,9 @@ const getAlbumsFromRedis = async function () {
 const getAlbums = async function () {
   return Promise.resolve(albums);
 };
+
+exports.getOrthopedicSurgeries = getOrthopedicSurgeries;
+exports.getOrthopedicSurgeriesFromRedis = getOrthopedicSurgeriesFromRedis;
 
 exports.getAlbums = getAlbums;
 exports.getAlbumsFromRedis = getAlbumsFromRedis;

@@ -5,3 +5,9 @@ exports.index = async function (req, res) {
   console.log("Retrieved Albums");
   res.json(albums);
 };
+
+//exports.getOrthopedicSurgeries = getOrthopedicSurgeries;
+//exports.getOrthopedicSurgeriesFromRedis = getOrthopedicSurgeriesFromRedis;
+
+//exports.getAlbums = getAlbums;
+//exports.getAlbumsFromRedis = getAlbumsFromRedis;
