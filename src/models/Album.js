@@ -148,11 +148,11 @@ const albums = [
 ];
 
 const getOrthopedicSurgeriesFromRedis = async function () {
-  return Promise.resolve(albums);
+  return Promise.resolve(orthopedicprocedures);
 };
 
 const getOrthopedicSurgeries = async function () {
-  return Promise.resolve(albums);
+  return Promise.resolve(orthopedicprocedures);
 };
 
 const getAlbumsFromRedis = async function () {
